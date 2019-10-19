@@ -25,6 +25,20 @@ public class Player : MonoBehaviour {
     private float volScale;
     private int jumpCounter;
     private AudioSource audioS;
+
+    public Rigidbody2D Rb
+    {
+        get
+        {
+            return rb;
+        }
+
+        set
+        {
+            rb = value;
+        }
+    }
+
     // Use this for initialization
     void OnEnable()
     {
